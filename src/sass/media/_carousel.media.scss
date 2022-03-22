@@ -1,0 +1,57 @@
+@media (max-width: 1200px) {
+    .carousel {
+        &__wrapper {
+            width: 90%;
+        }
+        .prev, .next {
+            display: none;
+        }
+        .tns-nav {
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            button {
+                margin: 0 8px;
+                width: 26px;
+                height: 26px;
+                border-radius: 51%;
+                background-color: $main-color;
+                border: none;
+            }
+            .tns-nav-active {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        &__wrapper {
+            width: 70%;
+            img {
+                width: 90%;
+            }
+        }
+        .tns-nav {
+            button {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel {
+        padding: 81px 10px;
+        .tns-nav {
+            bottom: -17%;
+            button {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
