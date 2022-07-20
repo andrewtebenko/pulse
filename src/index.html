@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="RunSmart - выбери свой пульсометр">
+    <meta name="description" content="Здесь вы сможете выбрать пульсометр для себя">
     <title>RunSmart</title>
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
     <section class="promo">
@@ -22,7 +24,7 @@
                     <span>Garmin, Polar, Suunto</span>
                 </div>
                 <div class="header__contacts">
-                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+                    <a href="tel:+380685261992" class="header__phone">+38 (068) 52-619-92</a>
                     <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
@@ -49,7 +51,7 @@
                 <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">перейти в каталог</a>
+                    <a href="#catalog">перейти в каталог</a>
                 </div>             
             </div>
         </div>
@@ -114,21 +116,21 @@
     <section class="carousel">
         <div class="container">
             <div class="carousel__wrapper">
-                <div><img src="img/slide_1.jpg" alt="slide"></div>
-                <div><img src="img/slide_2.jpg" alt="slide"></div>
-                <div><img src="img/slide_3.jpg" alt="slide"></div>
+                <div class="carousel__wrapper-slide"><img src="img/slide_1.jpg" alt="slide"></div>
+                <div class="carousel__wrapper-slide"><img src="img/slide_2.jpg" alt="slide"></div>
+                <div class="carousel__wrapper-slide"><img src="img/slide_3.jpg" alt="slide"></div>
             </div>
             <button type="button" class="prev"><img src="icons/left.svg" alt="arrow"></button>
             <button type="button" class="next"><img src="icons/right.svg" alt="arrow"></button>
         </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>          
             <ul class="catalog__tabs">
-                <li class="catalog__tab catalog__tab_active"><div>для фитнеса</div></li>
-                <li class="catalog__tab"><div>для бега</div></li>
-                <li class="catalog__tab"><div>для триатлона</div></li>
+                <li class="catalog__tab catalog__tab_active">для фитнеса</li>
+                <li class="catalog__tab">для бега</li>
+                <li class="catalog__tab">для триатлона</li>
             </ul>
             <div class="catalog__content catalog__content_active">
                 <div class="catalog-item">
@@ -155,8 +157,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__new-price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">1 110 грн.</div>
+                            <div class="catalog-item__new-price">900 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -185,8 +187,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 690 руб.</div>
-                            <div class="catalog-item__new-price">6 641 руб.</div>
+                            <div class="catalog-item__old-price">1 300 грн.</div>
+                            <div class="catalog-item__new-price">1 141 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -215,8 +217,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">7 390 руб.</div>
-                            <div class="catalog-item__new-price">7 021 руб.</div>
+                            <div class="catalog-item__old-price">1 000 грн.</div>
+                            <div class="catalog-item__new-price">860 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -245,8 +247,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__new-price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">1 150 грн.</div>
+                            <div class="catalog-item__new-price">950 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -275,8 +277,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 690 руб.</div>
-                            <div class="catalog-item__new-price">6 641 руб.</div>
+                            <div class="catalog-item__old-price">1 290 грн.</div>
+                            <div class="catalog-item__new-price">1 000 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -305,8 +307,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 690 руб.</div>
-                            <div class="catalog-item__new-price">6 641 руб.</div>
+                            <div class="catalog-item__old-price">940 грн.</div>
+                            <div class="catalog-item__new-price">1 321 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -337,8 +339,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 690 руб.</div>
-                            <div class="catalog-item__new-price">6 641 руб.</div>
+                            <div class="catalog-item__old-price">1 490 грн.</div>
+                            <div class="catalog-item__new-price">1 041 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -369,8 +371,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__new-price">4 500 руб.</div>
+                            <div class="catalog-item__old-price">1070 грн.</div>
+                            <div class="catalog-item__new-price">820 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -399,8 +401,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">6 690 руб.</div>
-                            <div class="catalog-item__new-price">6 641 руб.</div>
+                            <div class="catalog-item__old-price">1 390 грн.</div>
+                            <div class="catalog-item__new-price">1 041 грн.</div>
                         </div>
                         <button class="button button_mini">купить</button>
                     </div>
@@ -465,11 +467,11 @@
         </div>
     </section>
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304811959933!2d37.644807315829034!3d55.76839498055751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1648120622206!5m2!1sru!2sua" 
-        width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d369.3313194452548!2d30.481017207028913!3d50.47910019834447!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cde7113b3e39%3A0x80dab3847ce182c5!2sCrimeaBridge!5e0!3m2!1sru!2sua!4v1649098212953!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__info">
-            <address class="footer__address">Москва, Мясницкий проезд, д.3с1</address>
-            <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
+            <address class="footer__address">м.Київ, вул.Фрунзе, б.81</address>
+            <a href="tel:+380685261992" class="footer__phone">+38 (068) 526-19-92</a>
             <div class="footer__social">
                 <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
                 <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
@@ -479,7 +481,7 @@
     </footer>
     <div class="overlay">
         <div class="modal" id="consultation">
-            <div class="modal__close">&times;</div>
+            <div data-close class="modal__close">&times;</div>
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
@@ -490,7 +492,7 @@
             </form>
         </div>
         <div class="modal" id="order">
-            <div class="modal__close">&times;</div>
+            <div data-close class="modal__close">&times;</div>
             <div class="modal__subtitle">Ваш заказ:</div>
             <div class="modal__description">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
@@ -501,18 +503,16 @@
             </form>
         </div>
         <div class="modal modal_mini" id="response">
-            <div class="modal__close">&times;</div>
+            <div data-close class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__description">
             Наш менеджер свяжется с вами в ближайшое время
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
+    <script src="js/tabs.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/catalog.js"></script>
 </html>
