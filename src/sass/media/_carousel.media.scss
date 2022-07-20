@@ -2,26 +2,19 @@
     .carousel {
         &__wrapper {
             width: 90%;
-        }
-        .prev, .next {
-            display: none;
-        }
-        .tns-nav {
-            position: absolute;
-            bottom: -10%;
-            left: 50%;
-            transform: translateX(-50%);
-            button {
-                margin: 0 8px;
-                width: 26px;
-                height: 26px;
-                border-radius: 51%;
-                background-color: $main-color;
-                border: none;
+            &-slide {
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 80%;
+                }
             }
-            .tns-nav-active {
-                background-color: #000;
-            }
+        }
+        .prev {
+            left: 66px;
+        }
+        .next {
+            right: 66px;
         }
     }
 }
@@ -30,16 +23,23 @@
     .carousel {
         &__wrapper {
             width: 70%;
-            img {
-                width: 80%;
+            &-slide {
+                img {
+                    width: 100%;
+                }
             }
         }
-        .tns-nav {
-            bottom: -15%;
-            button {
-                width: 23px;
-                height: 23px;
+        .next, .prev {
+            img {
+                width: 25px;
+                height: 40px;
             }
+        }
+        .next {
+            right: 35px;
+        }
+        .prev {
+            left: 35px;
         }
     }
 }
@@ -47,12 +47,11 @@
 @media (max-width: 576px) {
     .carousel {
         padding: 81px 10px;
-        .tns-nav {
-            bottom: -25%;
-            button {
-                width: 18px;
-                height: 18px;
-            }
+        .next {
+            right: 3px;
+        }
+        .prev {
+            left: 3px;
         }
     }
 }
