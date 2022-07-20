@@ -1,27 +1,32 @@
-const slider = tns({
-  container: '.carousel__wrapper',
-  items: 1,
-  slideBy: 'page',
-  autoplay: false,
-  controls: false,
-  nav: false,
-  responsive: {
-    300: {
-      nav: true
-    },
-    1200: {
-      nav: false
+let slideIndex = 1;
+
+const slides = document.querySelectorAll('.carousel__wrapper div'),
+      previousButton = document.querySelector('.prev'),
+      nextButton = document.querySelector('.next');
+
+    const showSlides = n => {
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+
+        slides.forEach(item => item.style.display = 'none');
+
+        slides[slideIndex - 1].style.display = 'block';
     }
-  }
-});
 
-const prev = document.querySelector('.prev'),
-  next = document.querySelector('.next');
+    showSlides(slideIndex);
 
-prev.addEventListener('click', () => {
-  slider.goTo('prev');
-});
+    const plusSlides = n => {
+        showSlides(slideIndex += n);
+    }
+    
+    previousButton.addEventListener('click', () => {
+        plusSlides(-1);
+    })
 
-next.addEventListener('click', () => {
-  slider.goTo('next');
-});
+    nextButton.addEventListener('click', () => {
+        plusSlides(1);
+    })
