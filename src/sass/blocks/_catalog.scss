@@ -166,4 +166,50 @@
             }
         }
     }
+    &__timer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        &-text {
+            width: 45%;
+        }
+        &-block {
+            .timer {
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__block {
+                    width: 102px;
+                    height: 120px;
+                    background: #fff;
+                    box-shadow: 0 4px 20px rgb(0 0 0 / 25%);
+                    font-size: 16px;
+                    font-weight: 300;
+                    text-align: center;
+                    span {
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                        font-size: 56px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    &__title {
+        font-size: 36px;
+    }
+    &__description {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 300;
+        span {
+            font-weight: 700;
+            font-size: 26px;
+        }
+    }
 }

@@ -1,3 +1,27 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .catalog {
+        &__timer {
+            display: block;
+            &-text {
+                margin: 0 auto;
+                width: 80%;
+            }
+            &-block {
+                margin: 50px auto 0;
+                width: 80%;
+                .timer {
+                    width: 450px;
+                    margin-top: 35px;
+                    justify-content: space-between;
+                }
+            }
+        }
+        &__description {
+            margin-top: 20px;
+        }
+    }
+}
+
 @media (max-width:768px) {
     .catalog {
         &__tabs {
@@ -11,11 +35,31 @@
         .title {
             padding-top: 30px;
         }
+        &__timer {
+            display: block;
+            &-text {
+                margin: 0 auto;
+                width: 80%;
+            }
+            &-block {
+                margin: 50px auto 0;
+                width: 80%;
+                .timer {
+                    width: 450px;
+                    margin-top: 35px;
+                    justify-content: space-between;
+                }
+            }
+        }
+        &__description {
+            margin-top: 20px;
+        }
     }
 }
 
 @media (max-width: 576px) {
     .catalog {
+        padding-bottom: 85px;
         .title {
             font-size: 25px;
         }
@@ -25,6 +69,36 @@
         &__tab {
             width: 150px;
             margin: 15px 8px;
+        }
+        &__timer {
+            display: block;
+            padding-top: 35px;
+            &-block {
+                margin: 35px auto 10px;
+                width: 80%;
+                .timer {
+                    width: 300px;
+                    margin-top: 35px;
+                    justify-content: space-between;
+                    &__block {
+                        width: 65px;
+                        height: 95px;
+                        span {
+                            font-size: 38px;
+                        }
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__description {
+            font-size: 16px;
+            margin-top: 20px;
+            span {
+                font-size: 20px;
+            }
         }
     }
 }
